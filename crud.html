@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header>
+
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <div class="logo">
+      <img src="images/unilogo.png" alt="">
+    </div>
+
+  </header>
+
+  <!-- header section ends -->
+
+  <!--  nav area opened -->
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+    <a href="index.html">Home</a>
+    <a href="clubinfo.html">Club Info</a>
+    <a href="activity.html">Activity</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+    <a href="list.html">List Members</a>
+    <a href="login.html">Admin</a>
+</div>
+
+  <!--  nav area closed -->
+
+  <!-- crud starts -->
+
+  <div id="main-others">
+    <section class="crud">
+      <div class="titleCrud">
+        <h1>Records</h1>
+      </div>
+      <div class="displayArea">
+        <div class="searchPlace">
+          <form>
+            <input type="number" placeholder="Search.." name="search" id="searches">
+            <button type="submit" id="btnSubmit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="infoPlace">
+          <h2>Display Area</h2>
+          <table class="list" id="studList" style="width: 100%;">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>IC</th>
+                <th>Address</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Class</th>
+                <th>Telephone</th>
+                <th>Interest</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <div class="editPlace">
+          <h2>Edit Area</h2>
+          <table id="editSpace" style="width:100%">
+            <tr>
+              <th>Name:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>IC:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Address:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Age:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Gender:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Class:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Telephone:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Interest:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Username:</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Password:</th>
+              <td></td>
+            </tr>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  <button type="button" class="confirmBTN" id="confirmBtns">Confirm</button>
+                  <button type="button" class="printBTN" id="printBtns">Print</button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/crud.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+  <script>
+
+    function checkSesh() {
+      //Is the user authenticated?
+      if (sessionStorage.getItem('AuthenticationState') === null) {
+        window.location.replace("accessdenied.html");
+      }
+      //Is their authentication token still valid?
+      else if (Date.now() > (parseFloat(sessionStorage.getItem('AuthenticationExpires')) + 3600000)) {
+        window.location.replace("accessdenied.html");
+      }
+    }
+
+    checkSesh();
+    
+  </script>
+</body>
+
+</html>

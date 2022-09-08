@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="logo">
+            <img src="images/unilogo.png" alt="">
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!--  nav area opened -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Club Info</a>
+        <a href="activity.html">Activity</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">List Members</a>
+        <a href="login.html">Admin</a>
+    </div>
+
+    <!--  nav area closed -->
+
+    <!--  members starts  -->
+
+    <div id="main-others">
+        <section class="members">
+            <div class="titleMembers">
+                <h1>List of Members</h1>
+                <button type="button" class="seeAllBTN" id="seeAllBtns">All Members</button>
+            </div>
+            <!--
+            <button type="button" class="seeAllBTN" id="seeAllBtns">All Members</button> -->
+            <div class="displayArea">
+                <table class="list" id="studList" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>IC</th>
+                            <th>Email</th>
+                            <th>Class</th>
+                            <th>Telephone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableMembers"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/list.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

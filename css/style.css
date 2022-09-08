@@ -1,0 +1,967 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;
+}
+
+body{
+    background:snow;
+    overflow-x: hidden;
+    padding-left: 10rem;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:10rem;
+    background: #D07928;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+/* navigation starts */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidebar a {
+    padding: 8px 8px 8px 200px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.logo{
+    margin-bottom: 30rem;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #D07928;
+    padding: 10px 15px;
+    border: none;
+    margin-bottom: 20rem;
+    margin-top: 7rem;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* navigation ends */
+
+/* index starts */
+
+#main{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("images/1.jpg");
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#main h2{
+    color: beige;
+    text-shadow: 0 0 5px;
+    font-size: 6rem;
+    padding: 10px 40px;
+    margin-left: 5rem;
+}
+
+#main p{
+    color: beige;
+    text-shadow: 0 0 5px;
+    font-size: 2rem;
+    padding: 10px 40px;
+    margin-left: 5rem;
+}
+
+#main .btn{
+    background-color: #D07928;
+    text-align: center;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+    opacity: 0.9;
+    margin-left: 8rem;
+}
+
+#others{
+    margin-left: 5rem;
+    margin-top: 8rem;
+}
+
+#others .part1{
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+#others .part1 .ucapan{
+    float: left;
+    width: 50%;
+}
+
+#others .part1 .ucapan h1{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+#others .part1 .ucapan p{
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+#others .part1 img{
+    width: 700px;
+    height: 400px;
+}
+
+#others .part2{
+    text-align: center;
+}
+
+#others .part2 p{
+    margin: 2rem;
+}
+
+#others .part3{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#others .part3 p{
+    margin: 2rem;
+}
+
+/* index ends */
+
+/* -------------------------------------- */
+
+#main-others{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------- */
+
+/* club info starts */
+
+.clubinfo{
+    position: relative;
+	min-height: 900px;
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.clubinfo h1{
+    margin-bottom: 3rem;
+    font-size: 10rem;
+}
+
+.clubinfo h2{
+    font-weight: bold;
+    color: darkred;
+    padding-bottom: 1rem;
+}
+
+.info1{
+    margin-bottom: 10rem;
+}
+
+.pic-content1{
+	color: black;
+	box-sizing: border-box;
+    width: 50rem;
+}
+
+.pic-content1 h2{
+    padding-top: 20px;
+}
+
+.pic-content1 p{
+    padding-bottom: 10px;
+}
+
+.imgCI1{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    float: right;
+	color: black;
+	box-sizing: border-box;
+}
+
+.pic-content2{
+    margin-top: 1rem;
+	color: black;
+	box-sizing: border-box;
+    width: 50rem;
+}
+
+.pic-content2 div{
+    padding-bottom: 0.2rem;
+}
+
+.pic-content2 h2{
+    padding-top: 1rem;
+}
+
+.imgCI2{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 2rem;
+    height: 200px;
+    width: 200px;
+    float: left;
+	color: black;
+	box-sizing: border-box;
+}
+
+.info2{
+    margin-bottom: 10rem;
+}
+
+/* card */
+
+.opening{
+	margin-top: 10px;
+	color: #000;
+    text-align: center;
+}
+
+.row{
+	margin-left: 290px;
+	margin-right: 300px;
+	margin-top: 20px;
+}
+
+/* Three columns side by side */
+.column {
+	float: left;
+	width: 50%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+/* for card */
+.column .card{
+	background-color: brown;
+	color: snow;
+	border-radius: 20px;
+}
+
+/* make picture round */
+.column .card img{
+	height:15rem;
+    width:6rem;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* adjust text padding */
+.column .card .area .sid{
+	padding-bottom: 20px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* area inside card */
+.area {
+    padding: 0 16px;
+    text-align: center;
+}
+
+/* Clear floats */
+.area::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.area h2{
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 1rem;
+    color: black;
+    background-color: snow;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* clubinfo ends */
+
+/* activity starts */
+
+.gallery{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.gallery .title{
+    color: black;
+    font-size: 2rem;
+}
+
+.gallery .card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    margin-top: 3rem;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.gallery .card:hover{
+    transform: translateY(-10px);
+}
+
+.gallery .hero-area{
+    box-sizing: border-box;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+/* taktau lagi */
+.gallery .hero-area img{
+    border-radius: 1rem;
+    margin:2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* gellery ends */
+
+/* activity starts */
+
+.activity h1{
+    text-align: center;
+    font-size: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.activity #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2rem;
+    width: 300px;
+    height: 300px;
+}
+
+.activity #myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.activity .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.activity .modal-content {
+    margin: auto;
+    display: block;
+    width: 700px;
+    height: 700px;
+}
+
+/* Caption of Modal Image */
+.activity #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.activity .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)} 
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.activity .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.activity .close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.activity .modal-content {
+    width: 100%;
+}
+}
+
+/* activity ends */
+
+/* contact starts */
+
+.contact{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.contact .titleCTC{
+    margin-bottom: 5rem;
+}
+
+.contact .titleCTC h5{
+    margin: 2rem;
+}
+
+.contact .titleCTC h1{
+    font-size: 10rem;
+}
+
+.contact .info{
+    padding-top: 2.2rem;
+    background-color: #D07928;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px black;
+    margin: 2rem;
+}
+
+.contact .info:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.contact .promote{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contact .promote img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 400px;
+    width: auto;
+}
+
+.contact .promote button{
+    background-color: #D07928; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.contact .promote button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* contact ends */
+
+/* crud starts */
+
+.crud{
+    width: 100rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.crud button{
+    background-color: #D07928; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.crud button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.crud .editPlace button{
+    width: 6rem;
+}
+
+.crud .infoPlace button{
+    width: 4rem;
+    justify-content: center;
+}
+
+.crud .titleCrud h1{
+    text-align: center;
+    font-size: 10rem;
+}
+
+.crud .searchPlace{
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 5rem;
+    background-color: #e9e9e9;
+}
+
+.crud .searchPlace input{
+    margin-top: 1.5rem;
+    padding: 10px;
+}
+
+.crud .searchPlace input[type=text] {
+    padding: 6px;
+    font-size: 5rem;
+}
+
+.crud table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.crud th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.crud .infoPlace th{
+    width: 5rem;
+}
+
+.crud .infoPlace h2{
+    font-size: 2rem;
+}
+
+.crud .infoPlace table{
+    margin-top: 1rem;
+}
+
+.crud .infoPlace th{
+    text-align: center;
+}
+
+.crud .infoPlace td{
+    text-align: center;
+}
+
+.crud .editPlace h2{
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.crud .editPlace table{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.crud .editPlace th{
+    width: 50%;
+}
+
+/* crud ends */
+
+/* list starts */
+
+.members{
+    width: 100rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.members .titleMembers{
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.members .titleMembers h1{
+    font-size: 10rem;
+}
+
+.members table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.members th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.members button{
+    background-color: #D07928; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.members button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* members ends */
+
+/* registration starts */
+
+.regForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.regForm h1 {
+    position: absolute;
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    z-index: 2;
+}
+
+.regForm form {
+    margin-top: 5rem;
+    height: fit-content;
+    width: 50rem;
+    padding: 20px;
+    border-radius: 6px;
+    background: #F2F3F5;
+}
+
+.banner {
+    position: relative;
+    height: 210px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.regForm input{
+    width: 100%;;
+}
+
+.regForm input, label{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.regForm .question input, label{
+    display: inline;
+    width: fit-content;
+}
+
+.regForm .question span{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.regForm input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.regForm label{
+    font-weight: bold;
+}
+
+.regForm select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+}
+
+.regForm textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.question label:hover, input:hover::placeholder {
+    color: #D07928;
+}
+
+.item input:hover, .item select:hover, .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 8px 0 #D07928;
+    border-radius: 10px;
+    color: #D07928;
+}
+    
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.regForm input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.regForm button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #D07928;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnArea {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btnArea button{
+    margin: 1rem;
+}
+
+button:hover {
+    background: #D07928;
+}
+
+/* registration ends */
+
+/* login starts */
+
+.login{
+    position: relative;
+	min-height: 900px;
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.login h1{
+    margin-bottom: 1rem;
+    font-size: 10rem;
+}
+
+.login .heroArea{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.login .heroArea button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: blue;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login .form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.login .form-container input{
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+}
+
+.login .form-container input:focus {
+    border-color: #D07928;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login .form-container .btn-login {
+    background-color: #D07928;
+    border: none;
+    height: 3rem;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.login .form-container .btn-new {
+    background-color: #D07928;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 3rem;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 1rem; 
+    text-align: center;
+    margin-left: 5rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="logo">
+            <img src="images/unilogo.png" alt="">
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!--  nav area opened -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Club Info</a>
+        <a href="activity.html">Activity</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">List Members</a>
+        <a href="login.html">Admin</a>
+    </div>
+
+    <!--  nav area closed -->
+
+    <!--  activity starts  -->
+    <div id="main-others">
+        <section class="activity">
+            <h1>Activity</h1>
+    
+            <div class="gallery">
+                <img id="myImg" src="images/1.jpg" alt="Coding Bootcamp">
+                <img id="myImg" src="images/a.png" alt="Mentorship Programme">
+                <img id="myImg" src="images/e.png" alt="Invited Talk">
+                <img id="myImg" src="images/4.jpg" alt="Robotic">
+                <img id="myImg" src="images/5.jpg" alt="Hacking Competition">
+                <img id="myImg" src="images/6.jpg" alt="Networking Lesson">
+                <img id="myImg" src="images/f.png" alt="Coding Contest">
+            </div>
+    
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+        </section>
+    </div>
+
+    <!--  activity ends  -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="logo">
+            <img src="images/unilogo.png" alt="">
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!--  nav area opened -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Club Info</a>
+        <a href="activity.html">Activity</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">List Members</a>
+        <a href="login.html">Admin</a>
+    </div>
+
+    <!--  nav area closed -->
+
+    <!-- Login Starts -->
+
+    <section class="login">
+        <div class="heroArea">
+            <h1>Login</h1>
+            <button id="setArray">Setup</button>
+            <br>
+        </div>
+        <div class="form-container">
+            <input type="text" required="required" id="username" placeholder="Username">
+            <input type="password" required="required" id="pass" placeholder="Password">
+            <button id="submitBtn" name="sub" class="btn-login">Login</button>
+            <a href="registration.html">
+            <button class="btn-new">Create new Account</button>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

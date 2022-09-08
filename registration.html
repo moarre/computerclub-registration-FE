@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .banner{
+            background-image: url('images/1.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="logo">
+            <img src="images/unilogo.png" alt="">
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!--  nav area opened -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Club Info</a>
+        <a href="activity.html">Activity</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="list.html">List Members</a>
+        <a href="login.html">Admin</a>
+    </div>
+
+    <!--  nav area closed -->
+
+    <!--  registration starts  -->
+
+    <div id="main-others">
+        <section class="regForm" id="registerForm">
+            <form class="form" id="form">
+                <div class="banner">
+                    <h1>Registration Form</h1>
+                </div>
+                <div class="personal">
+                    <div class="item">
+                        <label for="name">Full Name</label>
+                        <input name="name" id="areaInput1" type="text" placeholder="Enter your full name"
+                            required="required" maxlength="50">
+                    </div>
+                    <div class="item">
+                        <label for="id">IC</label>
+                        <input name="idNum" id="areaInput2" type="text" id="regID" placeholder="Enter your IC number"
+                            required="required" maxlength="12" onkeypress="return checkSpcialChar(event)">
+                    </div>
+                    <div class="item">
+                        <label for="age">Age</label>
+                        <input name="age" id="areaInput3" type="text" placeholder="Enter your age"
+                            required="required" onkeypress="return checkSpcialChar(event)">
+                    </div>
+                    <div class="question">
+                        <label for="gender">Gender</label>
+                        <div class="question-answer">
+                            <ul>
+                                <ul><input name="gender" id="rb1" type="radio" name="gender"
+                                        value="Male"><span>Male</span></ul>
+                                <ul><input name="gender" id="rb2" type="radio" name="gender"
+                                        value="Female"><span>Female</span></ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="areaInput5" required="required" cols="30" rows="4"></textarea>
+                    </div>
+                    <div class="item">
+                        <label>Email</label>
+                        <input name="email" id="areaInput6" type="email" class="emails" placeholder="Enter your email">
+                    </div>
+                    <div class="item">
+                        <label for="phone">Phone Number</label>
+                        <input name="phone" id="areaInput7" type="text" placeholder="Enter your phone number"
+                            required="required" onkeypress="return checkSpcialChar(event)">
+                    </div>
+                </div>
+                <div class="others">
+                    <div class="item">
+                        <label for="username">Username</label>
+                        <input name="username" id="areaInput8" type="text" placeholder="Enter your username"
+                            required="required" maxlength="12">
+                    </div>
+                    <div class="item">
+                        <label for="passwd">Password</label>
+                        <input name="password" id="areaInput9" type="text" placeholder="Enter your password"
+                            required="required" maxlength="12">
+                    </div>
+                    <div class="item">
+                        <label for="kelas">Class</label>
+                        <select id="areaInput10" name="class">
+                            <option value="">Select</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="interest">Interest</label>
+                        <div class="question-answer">
+                            <fieldset>
+                                <ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Networking"><span>Networking</span></ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Hacking"><span>Hacking</span></ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Fixing computer"><span>Fixing computer</span></ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Robotic"><span>Robotic</span></ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Building WebApp"><span>Building WebApp</span></ul>
+                                    <ul><input name="interest" type="checkbox" class="check"
+                                            value="Gaming"><span>Gaming</span></ul>
+                                </ul>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnArea">
+                    <button type="reset" class="btnReset">Reset</button>
+                    <button type="submit" id="regBtn" class="btnReg">Register</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!--  registration ends  -->
+
+    <script src="js/script.js"></script>
+    <script src="js/regForm.js"></script>
+</body>
+
+</html>
